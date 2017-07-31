@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Comment.destroy_all
+Post.destroy_all
+
+puppies = Post.create(content: 'Puppies are awesome!', is_published: true)
+puppies.comments.create(body: 'i love puppies!')
+
+wine = Post.create(content: 'Wine is made from grapes. What\'s your favorite kind?', is_published: true)
