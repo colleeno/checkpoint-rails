@@ -1,0 +1,10 @@
+<h1>Add new post</h1>
+
+<%= form_for @post do |f| %>
+  <%= f.label :content %>
+  <%= f.text_field :content%>
+  <%= f.submit "Create" %>
+<% end %>
+
+<br>
+<a href="/posts">back to post index</a>
