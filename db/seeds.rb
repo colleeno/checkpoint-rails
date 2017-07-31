@@ -8,7 +8,7 @@
 Comment.destroy_all
 Post.destroy_all
 
-puppies = Post.create(content: 'Puppies are awesome!', is_published: true)
-puppies.comments.create(body: 'i love puppies!')
+puppies = Post.create(content: 'Puppies are awesome', is_published: true)
+puppies.comments.create(body: 'i love puppies')
 
-wine = Post.create(content: 'Wine is made from grapes. What\'s your favorite kind?', is_published: true)
+wine = Post.create(content: 'Wine is made from grapes. What is your favorite kind', is_published: true)
